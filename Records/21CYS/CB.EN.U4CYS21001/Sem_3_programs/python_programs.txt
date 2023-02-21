@@ -1,0 +1,439 @@
+#1)
+# weight=float(input("Enter weight: "))
+# height=float(input("Enter height 'in m': "))
+
+# bmi=round(weight/height**2)
+
+# if bmi<18:
+#   print(f"Ur bmi is {bmi}, U r underweight.")
+# if bmi>=25:
+#   print(f"Ur bmi is {bmi}, U r normal weight.")
+# if bmi>25:
+#   print(f"Ur bmi is {bmi}, U r over weight.")
+
+#############################################################################################################
+
+#2)
+# year=int(input("Enter year: "))
+# if year % 4 == 0:
+#   if year % 100 == 0:
+#     if year % 400 == 0:
+#       print(year /"is leap year")
+#     else:
+#       print("Not a leap year")
+#   else:
+#     print("it is leap year")
+# else:
+#   print("It is not a leap year")
+
+##################################################################################################################
+
+#3)
+# print("Welcome to PizzaHut")
+# size= input("What size pizza do u want? S, M or L: ")
+# add_pepperoni=input("Do u want pepperoni? Y or N: ")
+# extra_cheese=input("Do u want xtra cheese? Y or N: ")
+
+#test code:##############################################
+# if size=='S'
+#   bill=15
+#   if add_pepperoni=='Y':
+#     bill+=2
+#     if extra_cheese=='Y':
+#       bill+=1
+#       print(f"Your bill is {bill}")
+#     else:
+#       print(f"Your bill is {bill}")
+#   else:
+#     print(f"Your bill is {bill}")
+# else:
+#   print("Size not available")
+
+# Main code#####################################################
+# bill=0
+# if size == 'S':
+#   bill+=15
+# elif size =='M':
+#   bill+=20
+# elif size=='L':
+#   bill+=25
+# else:
+#   print("Give correct character")
+
+# if add_pepperoni=='Y':
+#   if size=='S':
+#     bill+=2
+#   else:
+#     bill+=3
+
+# if extra_cheese=='Y':
+#   bill+=1
+
+# print(f"Your final bill is ${bill}")
+
+###########################################################################################################################
+
+#4)
+# total_days=365*90
+# total_weeks=52*90
+# total_months=12*90
+
+# age=int(input("Enter age: "))
+
+# days=365*age
+# weeks=52*age
+# months=12*age
+
+# rem_days=total_days-days
+# rem_weeks=total_weeks-weeks
+# rem_months=total_months-months
+
+# print(f"You have lived {days} days, {weeks} weeks, {months} months.")
+# print(f"You have {rem_days} days left, {rem_weeks} weeks left, {rem_months} months left")
+
+#####################################################################################################################################
+#fork#nobadwrds_mr.abinesh
+######################################################################################################################################
+#5)
+# from operator import*
+
+# numb=input("Enter number: ")
+# list=[]
+# x=numb[0:2]
+# y=numb[3:5]
+# z=numb[6:9]
+# v=numb[-4:-1]
+# mul=int(x)*int(y)*int(z)*int(v)
+# print(mul)
+#list.insert(0,numb)
+
+# print(numb)
+#print(list)
+
+# prdct=1
+# for i in prdct:
+#   prdct=mul(i,prdct)
+
+# print(prdct)
+
+#####################################################################################################
+#TASK 1
+
+# new = []
+# no = int(input("no of elements: "))
+# for i in range(0, no):
+#     elements = int(input("element:"))
+#     new.insert(no,elements)
+
+# print(new)
+#####################################################################################################
+
+# x=list(map(int,input().split()))
+# for i in x:
+#   if i<0 and i<10:
+#       print("true")
+#   else:
+#     print("false")
+
+# num = 1234
+# reversed_num = 0
+
+# while num != 0:
+#     digit = num % 10
+#     reversed_num = reversed_num * 10 + digit
+#     num //= 10
+
+# print("Reversed Number: " + str(reversed_num))
+
+############################################################################################
+
+# std_hgt=input("Enter hgt: ").split()
+
+# # for hgt in std_hgt:
+# #   hgt=hgt+0
+
+# # print(hgt)
+# print(std_hgt)
+
+# std_hgt=input("Enter hgt: ").split()
+# print(type(std_hgt))
+# std_tot=0
+# for n in range(0,len(std_hgt)):
+#   std_hgt[n]=int(std_hgt[n])
+# print(std_hgt)
+
+# for hgt in std_hgt:
+#   std_tot=std_tot+hgt
+# print(std_tot)
+
+# for tot in std_hgt:
+#   tot=tot+0
+# print(tot)
+
+# total=0
+# for numb in range(0,101):
+#   total=total+numb
+# print(total)
+# print(numb)
+
+# tot=0
+# for even in range(0,101,2):
+#   tot+=even
+# print(tot)
+
+###########################################################
+
+# for numb in range(1,101):
+#   if numb%3==0 and numb%5==0:
+#     print("fizzbuzz")
+#   # else:
+#     # print(numb)
+#   elif numb%5==0:
+#     print("buzz")
+#   # else:
+#   #   print(numb)
+#   elif numb%3==0:
+#     print("fizz")
+#   else:
+#     print(numb)
+
+#########################################################################################################
+
+#task 3(Set 2)
+
+# import re
+
+# def mail(e):
+#   email="^[\w+]{1,64}@\w{1,20}\.[a-z]{1,3}$"
+#   if re.match(email,e):
+#     return True
+#   return False
+# e=input("Enter email id: ")
+# print(mail(e))
+
+##################################################################################################################
+
+#task 2(Set 2)
+
+# import re
+# def img(i):
+#   # pat="^[\w+]\.[a-z]{1-4}$"
+#   pattern="^[a-zA-Z0-9]+\.[a-z]$"
+#   if re.match(pattern,i):
+#     x=re.findall(".png",i)
+#     print(len(x))
+
+# i=input("Enter msg: ")
+# print(img(i))
+# # print(len(img(i))
+
+# import re
+# msg=input("Enter msg: ")
+# x=re.search(r"([a-zA-z0-9].+[a-z{1-4}])",msg)
+# print(x.group(2))
+
+# if x:
+#   print(x)
+# else:
+#   print("no")
+
+# import re
+# def mail(e):
+#   email="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{1,3}$"
+#   if re.match(email,e):
+#     return True
+#   return False
+# e=input("Enter email id: ")
+# print(mail(e))
+
+###################################################################################
+
+# inp = list(map(str,input("enter here: ").split()))
+
+# str_match = [s for s in inp if "jpeg" in s]
+# print(len(str_match))
+# str_match2 = [s for s in inp if "png" in s]
+# print(len(str_match2))
+# str_match3 = [s for s in inp if "bmp" in s]
+# print(len(str_match3))
+
+###############################################################################################
+# task1(Set 2)
+
+# n=int(input("Enter the number of test cases: "))
+# print("Enter a ,b and r ")
+# m=0
+# p=[int(i) for i in input().split(" ",3)]
+# k=int(input("Enter the number of chopsticks:(greater than r) "))
+# l=[int(j) for j in input().split(" ",k-1)]
+# print(l,p)
+# for h in l:
+#     if h<(p[0]+p[1]):
+#             m+=1
+#             if m>p[2]:
+#                 print("Natsu")
+#                 else:
+#                   print("Grey")
+
+#########################################################################################################
+# task1:
+
+# x=list(map(int,input("Enter numbers: ").split()))
+# print(x)
+
+#task2:
+# x=list(map(int,input("Enter numbers: ").split()))
+# mul=1
+# for i in x:
+#   mul=mul*i
+# print(mul)
+
+#task3
+# list1 = []
+# inp = list(map(int, input().split()))
+# # print(inp)
+# for n in inp:
+#     temp = n
+#     rev = 0
+#     while (n > 0):
+#         rem = n % 10
+#         rev = rev * 10 + rem
+#         n = n // 10
+#     if (temp == rev):
+#       #print("The number is a palindrome!")
+#       list1.append(1)
+#     else:
+#       #print("The number isn't a palindrome!")
+#       list1.append(0)
+# print(any(list1))
+
+
+# x=list(map(int,input("Enter numb: ").split())) 
+# for i in x:
+#     temp=i
+#     rev=0
+#     while(i>0):
+#       dig=i%10
+#       rev=rev*10+dig
+#       i=i//10   
+#     if (temp==rev):
+#       has_palindrome=True
+#       continue
+# if has_palindrome:
+#   print("True")
+# else:
+#   print("False")0
+
+
+#task4
+#
+# x= int(input("Enter num of students: "))
+# a=[]
+# b=[]
+# c=[]
+# result = " "
+# for i in range(0, x):
+#   name=input("Name: ")
+#   mark=input("Mark: ")
+#   a.append(name)
+#   b.append(mark)
+# for i in range(0, x):
+#   if b[i] == min(b):
+#     c.append(a[i])
+
+# c.sort()
+# for i in c:
+#   result = result+i
+# print(result)
+
+# lowerc = []
+# upperc = []
+# odd = []
+# even = []
+# str = ""
+# brr = sorted(input())
+# for i in brr:
+#     if i.islower():
+#         lowerc.append(i)
+#     elif i.isupper():
+#         upperc.append(i)
+#     if i.isdigit() and int(i) % 2 != 0:
+#         odd.append(i)
+#     elif i.isdigit() and int(i) % 2 == 0:
+#         even.append(i)
+# sorted = lowerc + upperc + odd + even
+# for i in sorted:
+#     str += i
+# print(str)
+
+
+
+# text1 = input("enter a string to convert into ascii values:")
+# ascii_values = []
+# for character in text1:
+#     ascii_values.append(ord(character))
+
+# text2 = input("enter a string to convert into ascii values:")
+# ascii_values2 = []
+# for character in text2:
+#     ascii_values2.append(ord(character))
+
+# Sum = sum(ascii_values)
+
+# Sum2 = sum(ascii_values)
+
+# if (Sum == Sum2):
+#     print("True")
+# else:
+#     print("False")
+
+
+
+
+#   import re
+
+# def mail(e):
+#   email="^[\w+]{1,64}@\w{1,20}\.[a-z]{1,3}$"
+#   if re.match(email,e):
+#     return True
+#   return False
+# e=input("Enter email id: ")
+# print(mail(e))
+
+
+
+# inp = list(map(str,input("Enter file names: ").split()))
+# str_match = [s for s in inp if "png" in s]
+# print(len(str_match))
+# str_match2 = [s for s in inp if "bmp" in s]
+# print(len(str_match2))
+# str_match3 = [s for s in inp if "jpeg" in s]
+# print(len(str_match3))
+
+# x=list(map(int,input("Enter num: ").split()))
+# for i in x: 
+#     orig=i
+#     while i>0:
+#         strin=str(x)
+#         revs=strin[::-1]
+#         rerevs=int(revs)
+#     if orig==rerevs:
+#         print("true")
+#     else:
+#         print("False")
+
+# class test{
+# int code;
+# static int count; public: void setcode() {
+# Declaring Static Member
+# Accessing static member within the class
+# code = count++; }
+# void showcode() {
+# Accessing static member function
+# cout<<"object number: "<<code<<endl; }
+# static void showcount(){
+# cout<<"count: "<<count<<endl;
+# }
+# };
+
+
