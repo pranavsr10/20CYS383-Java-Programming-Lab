@@ -1,6 +1,6 @@
 
 class  addition{
-
+//new
     public static void main(String[] args) {
 
         int first = 10;
