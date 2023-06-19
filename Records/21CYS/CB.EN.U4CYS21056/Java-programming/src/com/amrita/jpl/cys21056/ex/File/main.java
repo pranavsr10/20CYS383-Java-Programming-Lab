@@ -1,10 +1,10 @@
-package com.jpl.examples;
+package com.amrita.jpl.cys21056.ex.File;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Filecreation {
+public class main {
     public static void main(String[] args) {
         try {
             File myFile = new File("20cys383.txt");
