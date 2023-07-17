@@ -21,7 +21,8 @@ The project follows a simple flow:
 7. The extracted location information (display name) is displayed in a label below the button.
 
 ## Code
-    "import com.google.gson.JsonObject;
+ GeolocationTool.java
+    import com.google.gson.JsonObject;
     import com.google.gson.JsonParser;
     
     import javax.swing.*;
@@ -137,7 +138,7 @@ The project follows a simple flow:
     
             return null;
         }
-    }"
+    }
 
 ## How to Use
 
