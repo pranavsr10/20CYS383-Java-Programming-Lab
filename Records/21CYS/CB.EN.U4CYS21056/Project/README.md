@@ -22,6 +22,7 @@ The project follows a simple flow:
 
 ## Code
  GeolocationTool.java
+   
     import com.google.gson.JsonObject;
     import com.google.gson.JsonParser;
     
