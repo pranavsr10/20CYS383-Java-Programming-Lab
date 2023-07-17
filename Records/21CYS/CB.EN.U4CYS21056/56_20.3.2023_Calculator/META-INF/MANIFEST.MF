@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Created-By: 19.0.2 (N/A)
-Main-Class: com.amrita.Calculator
-

@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: com.amrita.jpl.cys21056.P1.SimpleTextEditor
-
