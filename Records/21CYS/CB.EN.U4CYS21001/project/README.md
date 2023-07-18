@@ -2,10 +2,6 @@
 
 The Recon Tool Web Application is a Java Swing-based GUI application designed for performing reconnaissance tasks on web applications. It allows users to perform vulnerability scanning and security analysis on a given target and provides an interface to view and save scan reports.
 
-##authors
--Abinesh G
--Anu Priya P
-
 ## Table of Contents
 
 - [Overview](#overview)
