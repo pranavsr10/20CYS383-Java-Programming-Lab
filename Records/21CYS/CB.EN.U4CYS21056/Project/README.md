@@ -3,6 +3,20 @@
 
 The Geolocation Tool is a Java Swing application that allows users to enter latitude and longitude coordinates and perform reverse geocoding to retrieve the corresponding location information.
 
+## Table of Contents
+
+ [Geolocation Tool](#geolocation-tool)
+   - [Overview](#overview)
+   - [Requirements](#requirements)
+   - [Code](#code)
+   - [How to Run](#how-to-run)
+   - [Demo](#demo)
+   - [Usage](#usage)
+   - [Dependencies](#dependencies)
+   - [API Reference](#api-reference)
+   - [Authors](#authors)
+   - [Acknowledgments](#acknowledgments)
+
 ## Overview
 
 The Geolocation Tool GUI provides the following functionalities:
