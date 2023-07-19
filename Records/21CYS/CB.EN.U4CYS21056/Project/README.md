@@ -391,8 +391,8 @@ The Geolocation Tool utilizes the Nominatim API to perform reverse geocoding and
 
 
 ## Authors
-Pranav S R
-Nishanth S
+- Pranav S R
+- Nishanth S
 
 ## Acknowledgments
 
