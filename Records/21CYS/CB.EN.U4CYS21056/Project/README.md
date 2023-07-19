@@ -355,11 +355,11 @@ To run the Geolocation Tool, the user can follow these steps:
 - Compile the Java file:
   Open a terminal (or command prompt) and navigate to the directory where  GeolocationTool.java is located. Compile the Java file using the  following command:
 
-`javac GeolocationTool.java`
+`javac GeolocationToolGUI.java`
 - Run the application:
   After successfully compiling the Java file, run the Geolocation Tool using the following command:
   
-`java GeolocationTool`
+`java GeolocationToolGUI.java`
 
 The GUI window for the Geolocation Tool will appear, and the user can now use the application to perform reverse geocoding and retrieve location information.
 
