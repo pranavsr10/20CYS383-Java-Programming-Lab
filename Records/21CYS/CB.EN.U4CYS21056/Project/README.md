@@ -1,24 +1,23 @@
 
-# GeolocationToolGUI
+## Geolocation Tool
 
-The GeolocationToolGUI is a Java application that allows you to retrieve the location information (address) based on latitude and longitude coordinates using the Nominatim API provided by OpenStreetMap. This tool provides a graphical user interface (GUI) for entering the latitude and longitude values and displays the corresponding location information.
+The Geolocation Tool is a Java Swing application that allows users to enter latitude and longitude coordinates and perform reverse geocoding to retrieve the corresponding location information.
 
-## Project Description
+## Overview
 
-The GeolocationToolGUI project utilizes the following components and libraries:
+The Geolocation Tool GUI provides the following functionalities:
 
-- Java Swing: The GUI framework used to create the graphical interface.
-- Google Gson: A Java library for parsing JSON data.
+- Enter latitude and longitude coordinates.
+- Geocode the coordinates to retrieve the location information using Nominatim API.
+- Display the location information on the GUI.
+- Maintain a search history of previously geocoded locations.
+- Copy the location information to the clipboard.
+- Save and load the search history to/from a file.
 
-The project follows a simple flow:
+## Requirements
 
-1. The user launches the application.
-2. The GUI window titled "Geolocation Tool" appears.
-3. The user enters the latitude and longitude values in the respective text fields.
-4. After entering the values, the user clicks the "Geocode" button.
-5. The application sends a request to the Nominatim API to retrieve the location information.
-6. The API response is received and parsed.
-7. The extracted location information (display name) is displayed in a label below the button.
+- Java Development Kit (JDK) 8 or higher.
+- Maven (for building the project).
 
 ## Code
  GeolocationTool.java
@@ -334,34 +333,71 @@ The project follows a simple flow:
       }
 
 
+## How-To-Run
+
+To run the Geolocation Tool, the user can follow these steps:
+
+- Download GeolocationToolGUI.java:
+ The user can download the GeolocationToolGUI.java file from the project   repository.
+
+- Compile the Java file:
+  Open a terminal (or command prompt) and navigate to the directory where  GeolocationTool.java is located. Compile the Java file using the  following command:
+
+`javac GeolocationTool.java`
+- Run the application:
+  After successfully compiling the Java file, run the Geolocation Tool using the following command:
+  
+`java GeolocationTool`
+
+The GUI window for the Geolocation Tool will appear, and the user can now use the application to perform reverse geocoding and retrieve location information.
+
      
 
 ## Demo
  ![Ui](Geolocation_tool.gif)
 
   
-  
-## How to Use
+## Usage
 
-To use the GeolocationToolGUI, follow these steps:
+- When the application starts, a GUI window will appear with the title "Geolocation Tool".
 
-1. Ensure you have Java installed on your system.
-2. Compile and run the Java code provided in your preferred development environment or using the command line.
-3. The GUI window titled "Geolocation Tool" will appear.
-4. Enter the latitude and longitude values in the respective text fields.
-5. Click the "Geocode" button.
-6. Wait for the application to retrieve the location information.
-7. The location information will be displayed in the label below the button.
+- Enter the latitude and longitude coordinates in the respective text fields.
 
-Please note that an internet connection is required to access the Nominatim API and retrieve the location information.
+- Click the "Geocode" button to retrieve the location information. The result will be displayed below the button.
 
-## Additional Notes
+- Click the "Clear" button to clear the latitude and longitude text fields and the result label.
 
-- The Nominatim API URL used in the code is set to retrieve the location data in JSON format and with the English language preference. You can modify the URL if you require a different format or language.
-- The code assumes valid latitude and longitude values will be entered by the user. Error handling and validation can be added for a more robust application.
-- Make sure to import the necessary libraries (`com.google.gson.JsonObject`, `com.google.gson.JsonParser`, `javax.swing.*`, `java.awt.*`, `java.awt.event.ActionEvent`, `java.awt.event.ActionListener`, `java.io.BufferedReader`, `java.io.IOException`, `java.io.InputStreamReader`, `java.net.HttpURLConnection`, `java.net.URL`) to compile and run the code successfully.
+- Click the "Copy to Clipboard" button to copy the location information to the clipboard.
 
-## Conclusion
+- The search history is displayed in a list below the result label. You can select an entry and click the "Delete Entry" button to remove it from the history.
 
-The GeolocationToolGUI provides a convenient way to retrieve location information based on latitude and longitude coordinates. By leveraging the Nominatim API and a user-friendly GUI, this tool simplifies the process of reverse geocoding. Feel free to enhance the application further to suit your specific requirements.
+- Click the "Clear History" button to clear the entire search history.
+
+- Click the "Save History" button to save the search history to a file -named "search_history.txt" in the project directory.
+
+- Click the "Load History" button to load the search history from the "search_history.txt" file.
+
+## Dependencies
+The Geolocation Tool uses the following external libraries:
+
+- Gson: for parsing JSON responses from the Nominatim API.
+
+## API Reference
+
+The Geolocation Tool utilizes the Nominatim API to perform reverse geocoding and retrieve location information.
+
+- API Endpoint: https://nominatim.openstreetmap.org/reverse
+- Parameters: `format=jsonv2`, `lat` (latitude), `lon` (longitude), `accept-language` (language for location names).
+
+
+## Authors
+Pranav S R
+Nishanth S
+
+## Acknowledgments
+
+The Geolocation Tool is based on the Swing GUI toolkit.
+Thanks to the developers of Gson and Nominatim API for providing the necessary libraries and services.
+
+
 
