@@ -337,7 +337,7 @@ The project follows a simple flow:
      
 
 ## Demo
- ![Ui](java.jpeg)
+ ![Ui](Geolocation_tool.gif)
 
   
   
